@@ -1,0 +1,67 @@
+.menu_more {
+  z-index: 9999;
+  position: absolute;
+  left: 10%;
+  top: 24%;
+  transform: translate3d(-16.8px, 33.6px, 0px);
+}
+.menu_more_wrapper {
+  animation: menu_more_in 0.3s ease;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.2);
+  color: #1d2129;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px 0;
+  transition: all 0.3s ease-in-out;
+  will-change: opacity, transform;
+}
+.chapter_item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chapter_item:hover {
+  background: #00000028;
+}
+.lession_list {
+  border-bottom-width: 1px;
+}
+.lession_item {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.lession_item:hover {
+  background: #00000028;
+  padding-left: 5px;
+}
+@keyframes menu_more_in {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu_more_wrapper li {
+  color: #444;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  padding: 10px 14px;
+  transition: 0.3s;
+}
+.menu_more_wrapper li:hover {
+  background-color: #e8e8e8;
+}

@@ -1,0 +1,28 @@
+.isFull {
+  width: 100%;
+}
+.mainSide{
+  translate: 0%;
+  transition: all linear 200ms;
+
+}
+.sidebarHide {
+  translate: -100%;
+  transition: all linear 200ms;
+}
+.lb::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  height: 38px;
+  padding: 9px 16px;
+  line-height: 1.5;
+  color: #495057;
+  content: "Browse";
+  background-color: #e9ecef;
+  border-left: inherit;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
